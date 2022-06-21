@@ -1,0 +1,38 @@
+@use '../util/' as *;
+@use '../globals/fonts.scss' as *;
+@use '../globals/colors.scss' as clr;
+
+html {
+	font-size: rem(15);
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Poppins';
+	font-weight: $f-regular;
+
+	text-align: center;
+
+	background-color: clr(neutral, light-gray);
+	color: clr(neutral, dark-blue);
+
+	max-width: rem(1160);
+
+	padding-block: 4rem;
+	padding-inline: 1.5rem;
+}
+
+.footer__attribution { 
+	font-size: rem(17.2); 
+	text-align: center; 
+
+	a { 
+		color: hsl(228, 45%, 44%);
+	}
+}

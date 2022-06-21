@@ -1,0 +1,57 @@
+@use '../util/' as *;
+@use '../globals/' as *;
+
+.content__card {
+    padding: 1.85rem;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    box-shadow:  0px 10px 20px 3px rgba(0, 0, 0, 0.1);
+
+
+    .card__heading {
+        font-size: 1.45rem;
+        font-weight: $f-semibold;
+    }
+
+    .card__desc {
+        font-weight: $f-regular;
+
+        color: clr(neutral, grayish-blue);
+
+        line-height: 1.5;
+
+        margin: rem(12) 0;
+    }
+
+    .card__icon {
+        width: 64px;
+
+        margin-top: 2rem;
+        margin-left: auto;
+    }
+}
+
+.content {
+    
+    .c__supervisor {
+        border-top: 4px solid clr(primary, cyan);
+    }
+
+    .flex__content {
+
+        .c__team-builder {
+            border-top: 4px solid clr(primary, red);
+        }
+
+        .c__karma {
+            border-top: 4px solid clr(primary, orange);
+        }
+    }
+
+    .c__calc {
+        border-top: 4px solid clr(primary, blue);
+    }
+}

@@ -1,0 +1,65 @@
+@use '../globals/' as *;
+@use '../util' as *;
+@use '../globals/colors.scss' as clr;
+
+.header {
+    text-align: center;
+
+    .header__title {
+        font-size: 1.5rem;
+        font-weight: $f-light;
+    }
+
+    .header__subtitle {
+        font-size: 1.5rem;
+        font-weight: $f-semibold;
+
+        margin-top: rem(12);
+    }
+
+    .header__desc {
+        font-size: rem(15.2);
+        font-weight: $f-regular;
+
+        color: clr(neutral, grayish-blue);
+
+        margin: rem(22) 0;
+    }
+}
+
+.content {
+    padding: 0;
+    margin-top: 5rem;
+
+    .flex__content {
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+@include breakpoint(medium) {
+    .header {
+        margin: 0 auto;
+        max-inline-size: 500px;
+
+        .header__title, .header__subtitle {
+            font-size: 2.35rem;
+        }
+
+        .header__desc {
+            font-size: rem(17.2);
+        }
+    }
+
+    .content {
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+@include breakpoint-down(small) {
+    .footer__attribution {
+        display: none;
+    }
+}
